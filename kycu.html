@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kycu | Qysh o Profa?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="bar">
+        <a href="index.html" class="logo">Qysh O Profa?</a>
+        <nav aria-label="Navigimi kryesore">
+          <ul class="nav-links">
+            <li><a href="index.html">Ballina</a></li>
+            <li><a href="search.html">Kerko</a></li>
+            <li><a href="vleresimi.html">Vleresimi</a></li>
+            <li><a href="profili.html">Profili</a></li>
+            <li><a href="kycu.html">Kycu</a></li>
+            <li><a href="regjistrohu.html">Regjistrohu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="form-box" aria-labelledby="login-home">
+        <h1 id="login-home">Mire se u ktheve!</h1>
+        <p>Ju lutem kycu ne menyren qe je regjistruar!</p>
+        <div class="btn-row">
+          <button class="btn" type="button">Vazhdo me Google</button
+          ><button class="btn-row2" type="button">Vazhdo me Email</button>
+        </div>
+        <hr class="Ndaresi" />
+        <h2>Kycu Manualisht</h2>
+        <form data-auth="login" novalidate>
+          <div class="field">
+            <label for="Email">Email</label
+            ><input type="email" id="email" required />
+          </div>
+          <div class="field">
+            <label for="password">Fjalekalimi</label>
+            <div class="pw-wrap">
+              <input type="password" id="password" required /><button
+                type="button"
+                class="toggle-pw"
+                data-target="password"
+              >
+                Shfaq
+              </button>
+            </div>
+          </div>
+          <label class="inline"><input type="checkbox" />Me mbaj mend</label>
+          <p class="form-msg error" role="status"></p>
+          <button type="submit" class="btn">Kycu</button>
+        </form>
+        <p class="form-link">
+          Nuk ke llogari? <a href="regjistrohu.html">Regjistrohu!</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
