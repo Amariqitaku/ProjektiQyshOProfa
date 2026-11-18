@@ -13,7 +13,10 @@
   <body>
     <header class="site-header">
       <div class="bar">
-        <a href="index.html" class="logo">Qysh O Profa</a>
+        <a href="index.html" class="logo"
+          >Qysh O Profa
+          <img src="logoqyshoprofa.png" width="100px" alt="" />
+        </a>
         <nav aria-label="Kryesore Navigimi">
           <li><a href="index.html">Ballina</a></li>
           <li><a href="search.html">Kërko</a></li>
@@ -23,5 +26,65 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section class="banner">
+        <h1>
+          Vleresoni profesoret. <br />
+          Ndani pervojat.
+        </h1>
+        <p>
+          Jepi note nga 1-5 profesoreve dhe ndaj vleresimin me koleget tjere per
+          ti ndihmuar ata.
+        </p>
+        <div class="btn-banner">
+          <a href="kycu.html" class="btn">Kycu</a>
+          <a href="regjistrohu.html" class="btn-banner2">Regjistrohu</a>
+        </div>
+      </section>
+      <section aria-labelledby="si-punon">
+        Si punon?
+        <div class="slider">
+          <article class="slideri">
+            <span class="ngjyra kuqe">1.0</span>
+          </article>
+          <article class="slideri">
+            <span class="ngjyra verdh">3.0</span>
+          </article>
+          <article class="slideri">
+            <span class="ngjyra gjelbert">4.0</span>
+          </article>
+          <div class="kontrola-slideri">
+            <button class="arrow para" aria-label="Para">&#8249;</button>
+            <div class="dots"></div>
+            <button class="arrow pas" aria-label="Pas">&#8250;</button>
+          </div>
+        </div>
+      </section>
+      <section class="add-box" aria-labelledby="add-h">
+        <h2 id="add-h">Shto nje profesor</h2>
+        <form id="shto-profesor-form" novalidate>
+          <div class="field">
+            <label for="name">Emri</label
+            ><input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="p.sh Prof.Filani"
+            />
+          </div>
+          <div class="field">
+            <label for="fakullteti">Fakullteti</label>
+            <select name="fakullteti" id="fakullteti">
+              <option value="">Zgjidh...</option>
+              <option>UBT</option>
+              <option>UP</option>
+              <option>AAB</option>
+              <option>Universum</option>
+              <option>Heimerer</option>
+            </select>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
