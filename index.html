@@ -65,12 +65,7 @@
         <form id="shto-profesor-form" novalidate>
           <div class="field">
             <label for="name">Emri</label
-            ><input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="p.sh Prof.Filani"
-            />
+            ><input type="text" id="name" name="name" />
           </div>
           <div class="field">
             <label for="fakullteti">Fakullteti</label>
@@ -83,8 +78,46 @@
               <option>Heimerer</option>
             </select>
           </div>
+          <div class="field">
+            <label for="drejtimi">Drejtimi</label>
+            <select name="drejtimi" id="drejtimi">
+              <option value="">Zgjidh...</option>
+              <option>Shkenca Kompjuterike</option>
+              <option>Inxhinieri</option>
+              <option>Dizajn Grafik</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="lenda">Lënda</label
+            ><input type="text" id="lenda" name="lenda" />
+          </div>
+          <button type="submit" class="btn">Shto</button>
+          <p id="add-msg" class="form-msg" role="status"></p>
         </form>
       </section>
+
+      <div class="layout">
+        <div class="kolona-kryesore">
+          <section aria-labelledby="feed-home">
+            <h2 id="feed-home">Feed-i i vleresimeve</h2>
+            <div class="tabs" role="tablist">
+              <button class="tab active" data-tab="ty">Per ty!</button>
+              <button class="tab" data-tab="trending">Trending</button>
+            </div>
+            <div class="cards" id="feed-fyp" data-panel="ty"></div>
+            <div
+              class="cards"
+              id="feed-trending"
+              data-panel="trending"
+              hidden
+            ></div>
+          </section>
+        </div>
+        <aside aria-labelledby="profesoret-home">
+          <h2 id="profesoret-home">Profesoret</h2>
+          <div class="cards" id="profa-list"></div>
+        </aside>
+      </div>
     </main>
   </body>
 </html>
