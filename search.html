@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kërko | Qysh o Profa?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="bar">
+        <a href="index.html" class="logo">Qysh O Profa?</a>
+        <nav aria-label="Navigimi kryesore">
+          <ul class="nav-links">
+            <li><a href="index.html">Ballina</a></li>
+            <li><a href="search.html">Kerko</a></li>
+            <li><a href="vleresimi.html">Vleresimi</a></li>
+            <li><a href="profili.html">Profili</a></li>
+            <li><a href="kycu.html">Kycu</a></li>
+            <li><a href="regjistrohu.html">Regjistrohu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section aria-labelledby="kerko-home">
+        <h1 id="kerko-home">Kerko Profesorin</h1>
+        <input
+          type="search"
+          id="q"
+          placeholder="Kerko profen"
+          aria-label="Kerko Profen"
+        />
+      </section>
+
+      <section aria-labelledby="filtro-home">
+        <h2 id="filtro-home">Filtro</h2>
+        <div class="filters">
+          <div class="field">
+            <label for="fakullteti">Fakulteti</label>
+            <select id="fakullteti">
+              <option value="">Te gjitha</option>
+              <option>UBT</option>
+              <option>AAB</option>
+              <option>UP</option>
+              <option>Universum</option>
+              <option>Heimerer</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="veshtiresia">Veshtiresia</label>
+            <select id="veshtiresia">
+              <option value="">Te gjitha</option>
+              <option>E Lehte</option>
+              <option>Mesatare</option>
+              <option>E veshtire</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="rezultatet-home">
+        <h2 id="rezultatet-home">Rezultatet</h2>
+        <div class="cards" id="results"></div>
+      </section>
+    </main>
+  </body>
+</html>
